@@ -1,0 +1,45 @@
+*** POND HTML/CSS Changelog ***
+
+December 08 2014 - Version 2.0
+
+	- NEW: horizontal full height carousel (index-portfolio)
+	- NEW: 4th Portfolio Single Demo
+	- FIX: Logo size on big border for tablets
+	- FIX: Header show after loading is finished
+	- OPTIMIZE: hover effect vertically centered
+	
+	
+	Files changed:
+	- style.css
+	- mqueries.css
+	- owl.carousel.css
+	- script.js
+	- pond-header.js
+
+	New files:
+	- 404.html
+	- index-portfolio.html
+	- portfolio-single4.html
+
+
+
+December 05 2014 - Version 1.1
+	
+	* NEW: 3rd portfolio Single demo
+	* FIX: Chrome Nav Issue
+	* FIX: Safari/Chrome Logo issue
+	* FIX: Nav sticks to top if no border
+
+
+	Files changed:
+	- style.css
+	
+	New files:
+	- portfolio-single3.html
+
+
+
+November 30 2014 - Version 1.0
+	
+	* First release
+
