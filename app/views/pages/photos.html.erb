@@ -1,0 +1,122 @@
+<!-- PAGE CONTENT -->
+<div id="page-content">
+
+	<!-- HEADER -->
+	<%= render "shared/header" %>
+	<!-- HEADER -->  
+	
+	
+	<!-- PAGE TITLE -->
+	<section id="page-title" class="full-height parallax-section" data-parallax-image="<%= image_path("uploads/roof2.jpg")%>" style="background-size: cover !important;">
+		<div class="section-inner align-center text-light">
+			<div class="separator-small"><span></span></div>
+			<div><h2 class="title-minimal"><strong>Gallery</strong></h2></div>
+			<!-- The h2 is wrapped into a div tag because byd efault it has a top margin. By placing it in the div it doesn't apply the top padding because it's the first child of its parent element -->
+			<div class="separator-small"><span></span></div>
+		</div>
+	</section>
+	<!-- PAGE TITLE -->
+	
+	
+	<!-- PAGEBODY -->
+	<div class="page-body">
+	
+		<!-- GALLERY SECTION -->
+		<section id="gallery" class="notoppadding">
+			<div class="section-inner">
+			<!-- I choosed notoppadding in order to manage the spacing with the 'spacer' element. See below. -->
+			
+				
+				<div class="wrapper">
+					<div class="spacer spacer-medium"></div>
+					<div class="spacer spacer-medium"></div>
+					<div class="main-title wrapper align-center">
+						<img src="https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-Instagram.png" style=""/>
+						<h4 class="title-minimal" data-bigletter="M"><strong>#MaliaVibes</strong></h4>
+					</div>
+					<div class="spacer spacer-medium"></div>
+					<div class="spacer spacer-medium"></div>
+				</div>
+				
+				
+				<div id="gallery-grid-portrait" class="masonry gallery-entries clearfix" data-maxitemwidth="800">
+					<div class="masonry-item">
+						<%= image_tag("uploads/fence.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("uploads/garage.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("uploads/roof.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("uploads/roof2.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("uploads/grasshill.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("uploads/hometown.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("uploads/sidewalk.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("uploads/skateboard.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("uploads/tree.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("uploads/face.jpg") %>
+					</div>
+					
+				
+
+					<div class="masonry-item">
+						<%= image_tag("gallery/1.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("gallery/2.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("gallery/3.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("gallery/4.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("gallery/5.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("gallery/6.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("gallery/7.jpg") %>
+					</div>
+					<div class="masonry-item">
+						<%= image_tag("gallery/8.jpg") %>
+					</div>
+
+
+					<div class="masonry-item icon">
+						<a href="#">
+						<img src="https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-Instagram.png" style="padding-left: 40%; padding-top: 12%;"/>
+						<h6 style="text-align: center;"><strong>#MALIAVIBES</strong></h5>
+						</a>
+					</div>
+				</div> <!-- END .masonry -->
+				
+			</div>
+		</section>
+		<!-- GALLERY SECTION -->
+		
+      	<!-- FOOTER -->
+		<%= render "shared/footer" %>
+		<!-- FOOTER -->      
+        
+ 	</div> <!-- END .page-body -->
+	<!-- PAGEBODY -->
+    
+</div> <!-- END #page-content -->
+<!-- PAGE CONTENT -->

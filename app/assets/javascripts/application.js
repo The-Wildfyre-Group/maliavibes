@@ -12,4 +12,25 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+
+//= require pond/retina
+//= require pond/jquery.pace
+//= require pond/jquery.easing.1.3
+//= require pond/jquery.easing.compatibility
+//= require pond/jquery.visible.min
+//= require pond/jquery.owl.carousel.min
+//= require pond/pond-header
+//= require pond/script
+
+//= require pond/jquery.isotope.min
+//= require pond/jquery.bgvideo.min
+//= require pond/jquery.fitvids.min
+//= require pond/jquery.fancybox.pack
+//= require rs-plugin/js/jquery.themepunch.tools.min
+//= require rs-plugin/js/jquery.themepunch.revolution.min
+//= require pond/jquery.parallax.min
+//= require pond/jquery.counter.min
+//= require pond/jquery.scroll.min
+//= require pond/jquery.owl.carousel.min
+//= require pond/pond-form
+
