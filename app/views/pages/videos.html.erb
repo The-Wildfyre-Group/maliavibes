@@ -2,72 +2,7 @@
 <div id="page-content">
 
 	<!-- HEADER -->
-	<header id="header">        
-		<div class="header-inner clearfix">
-		
-			<!-- FIXED HEADER CONTENT (*optional / this will be shown when header is switching to fixed) -->
-			<div class="fixed-header-content"> 
-				<h1 id="header-name" class="alttitle title-minimal left-float"><strong>MaliaVibes - Videos</strong></h1>
-				<div id="social-share" class="right-float">
-					<a href="#" class="show-share">Share</a>
-					<ul class="socialmedia-widget alttitle">
-						<li class="facebook"><a href="#"></a></li>
-						<li class="twitter"><a href="#"></a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- FIXED HEADER CONTENT -->
-			
-           <!-- DEFAULT HEADER CONTENT -->
-		   	<div class="default-header-content">                 
-				<div id="logo" class="left-float">
-					<a id="default-logo" class="logotype" href="index.html">
-						<% image_tag("uploads/pond-logo.png", alt: "Logo") %>
-					</a>
-					<a id="fixed-logo" class="logotype" href="index.html">
-						<% image_tag("uploads/pond-logo.png", alt: "Logo") %>
-					</a>
-				</div>    
-				
-				<div class="menu right-float clearfix">
-					<a href="#" class="open-nav nav-dark"><span></span></a>
-					<nav id="main-nav" class="text-light">
-						<div class="nav-logo"><img src="files/uploads/pond-logo-light.png" alt="Logo"></div>
-						<div class="nav-inner">
-						<ul>
-						<li><a href="index.html" class="scroll-to" data-bigletter="H">Home</a></li>
-						<li><a href="index.html#about" class="scroll-to" data-bigletter="A">About</a></li>
-						<li><a href="index.html#services" class="scroll-to" data-bigletter="S">Service</a></li>
-						<li><a href="index.html#work" class="scroll-to" data-bigletter="W">Work</a></li>
-						<li  class="current-menu-item"><a href="blog.html" data-bigletter="B">Blog</a></li>
-						<li><a href="elements.html" data-bigletter="F">Features</a>
-								<ul class="sub-menu">
-									<li><a href="elements.html">General Elements</a></li>    
-									<li><a href="portfolio-layout.html">Portfolio Layout</a></li>    
-									<li><a href="split-section.html">Split sections</a></li>
-								</ul>
-							</li>
-						<li><a href="index.html#contact" class="scroll-to" data-bigletter="C">Contact</a></li>
-						</ul>
-						</div>
-						<div class="nav-social">
-							<ul class="socialmedia-widget social-share">
-								<li class="facebook"><a href="#"></a></li>
-								<li class="twitter"><a href="#"></a></li>
-								<li class="linkedin"><a href="#"></a></li>
-								<li class="dribbble"><a href="#"></a></li>
-								<li class="behance"><a href="#"></a></li>
-								<li class="instagram"><a href="#"></a></li>
-							</ul>
-						</div>
-						<div class="nav-bg"></div>
-					</nav>
-				</div>
-			</div>
-           <!-- DEFAULT HEADER CONTENT -->
-                    
-		</div> <!-- END .header-inner -->
-	</header> <!-- END header -->
+	<%= render "shared/header" %>
 	<!-- HEADER -->  
 	
 
@@ -143,7 +78,7 @@
 							<h4><strong>Sunny Day Acoustic Version</strong></h4>
 							<div class="separator-small"><span></span></div>
 							<p>
-								Split sections will automatically adapt to the width of the browser which .
+								An original.
 							</p>
 						</div>
 					</div> <!-- END .split-left -->

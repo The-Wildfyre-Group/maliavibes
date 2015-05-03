@@ -8,7 +8,7 @@
 	
 
 	<!-- PAGE TITLE -->
-	<section id="page-title" class="parallax-section" data-parallax-image="https://jaycebaron.files.wordpress.com/2014/02/1270127_10200672578433415_1899607243_o.jpg" style="background-size: contain !important; background-position: 0 -800px !important;">
+	<section id="page-title" class="parallax-section" data-parallax-image="https://jaycebaron.files.wordpress.com/2014/02/1270127_10200672578433415_1899607243_o.jpg" style="background-size: contain !important; background-position: 200px 0 !important;">
 		<div class="imgoverlay overlay-dark"  style="z-index: 99999;">
 			<div class="section-inner wrapper align-center">
 					<div class="blog-headline">
@@ -34,16 +34,24 @@
 						
 					<div class="owlcarousel content-carousel" data-autoplay="6000" data-pagination="false">
 						<div class="align-center">
-							<img src="files/uploads/spotify-128.png" alt="Spotify" style="height: 60px;">
+							<a href="https://play.spotify.com/album/60A36S76oilJR8TI2eVGrt">
+								<%= image_tag("uploads/spotify-128.png", style: "height: 80px;") %>
+							</a>
 						</div>
 						<div class="align-center">
-							<img src="files/uploads/soundcloud-128.png" alt="SoundCloud" style="height: 55px;">
+							<a href="https://soundcloud.com/maliavibes">
+								<%= image_tag("uploads/soundcloud-128.png") %>
+							</a>
 						</div>
 						<div class="align-center">
-							<img src="files/uploads/itunes_A-128.png" alt="itunes" style="margin-top: -30px;">
+							<a href="https://itunes.apple.com/us/album/malia-ep/id956187095">
+								<%= image_tag("uploads/itunes_A-128.png", style: "margin-top: -25px;") %>
+							</a>
 						</div>
 						<div class="align-center">
-							<img src="files/uploads/youtube2-128.png" alt="Youtube" style="height: 55px;">
+							<a href="https://www.youtube.com/channel/UCXi8B8Vw8pCHnxKy7qKJU4A">
+								<%= image_tag("uploads/youtube2-128.png", style: " height: 75px;") %>
+							</a>
 						</div> 
 					</div>
 				</div>
@@ -56,7 +64,7 @@
 
 
 	<!-- PAGE TITLE -->
-	<section id="page-title" class="parallax-section" data-parallax-image="files/uploads/roof.jpg" style="background-size: 120% !important;">
+	<section id="page-title" class="parallax-section" data-parallax-image="<%= image_path("uploads/roof.jpg") %>" style="background-size: 120% !important;">
 		<div class="imgoverlay overlay-dark">
 			<div class="section-inner wrapper align-center">
 				<div class="blog-headline">
@@ -84,9 +92,11 @@
 					<h4><strong>Dull Aches</strong></h4>
 					<div class="separator-small"><span></span></div>
 					<p class="credits">
-						<span class=""> <strong>Written By</strong> Malia</span>
-						<span class=""><strong>Produced By</strong> Malia</span>
-						<span class=""><strong>Guitar</strong> Malia</span>
+						<span class=""><strong>Written by</strong>: Malia & Rose Tan</span>
+						<span class=""><strong>Produced by</strong>: Malia (Rhythm Guitar)</span>
+						<span class=""><strong>Lead Guitar</strong>: Evan Matthews</span
+							>
+						<span class=""><strong>Bass</strong> Patrick Paige</span>
 					</p>
 					<div class="column-section clearfix">
 						<div class="column one-half">
@@ -147,7 +157,7 @@
 		<br/>
 
 		<!-- PAGE TITLE -->
-		<section id="page-title" class="parallax-section" data-parallax-image="files/uploads/fence.jpg"  style="background-size: 120% !important;">
+		<section id="page-title" class="parallax-section" data-parallax-image="<%= image_path("uploads/fence.jpg")%>"  style="background-size: 120% !important;">
 			<div class="imgoverlay overlay-dark">
 				<div class="section-inner wrapper align-center">
 					<div class="blog-headline">
@@ -158,6 +168,7 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- PAGE TITLE -->
 		<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/158732800&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 			
@@ -166,13 +177,11 @@
 				<div class="blog-content">
 					<h4><strong>Sunny Day</strong></h4>
 					<div class="separator-small"><span></span></div>
+					
 					<p class="credits">
-						<span class=""> <strong>Written By</strong>: Malia</span>
-						<span class=""><strong>Produced By</strong>: Malia</span>
-						<span class=""><strong>Guitar</strong>: Malia</span>
+						<span class=""> <strong>Written by</strong>: Malia & Syd</span>
+						<span class=""><strong>Produced by</strong>: Malia (Rhythm Guitar) and The Internet</span>
 					</p>
-
-
 
 					<div class="column-section clearfix">
 						<div class="column one-half">
@@ -258,7 +267,7 @@
 		<br/>
 
 		<!-- PAGE TITLE -->
-		<section id="page-title" class="parallax-section" data-parallax-image="files/uploads/garage.jpg" style="background-size: 120% !important;">
+		<section id="page-title" class="parallax-section" data-parallax-image="<%= image_path("uploads/garage.jpg") %>" style="background-size: 120% !important;">
 			<div class="imgoverlay overlay-dark">
 				<div class="section-inner wrapper align-center">
 					<div class="blog-headline">
@@ -269,18 +278,20 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- PAGE TITLE -->
 		<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/156853449&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 
 		<section id="blog-single">
 			<div class="section-inner wrapper clearfix">
 				<div class="blog-content">
-					<h4><strong>Sunny Day</strong></h4>
+					<h4><strong>Satisfaction</strong></h4>
 					<div class="separator-small"><span></span></div>
 					<p class="credits">
 						<span class=""> <strong>Written By</strong>: Malia</span>
-						<span class=""><strong>Produced By</strong>: Malia</span>
-						<span class=""><strong>Guitar</strong>: Malia</span>
+						<span class=""> <strong>Produced By</strong>: Malia (rhythm guitar)</span>
+						<span class=""><strong>Lead Guitar</strong>: Evan Matthews</span>
+						<span class=""><strong>Bass</strong>: Patrick Paige</span>
 					</p>
 				
 					<div class="column-section clearfix">
@@ -394,9 +405,8 @@
 					<h4><strong>Lovestruck</strong></h4>
 					<div class="separator-small"><span></span></div>
 					<p class="credits">
-						<span class=""> <strong>Written By</strong>: Malia</span>
-						<span class=""><strong>Produced By</strong>: Malia</span>
-						<span class=""><strong>Guitar</strong>: Malia</span>
+						<span class=""> <strong>Written By</strong>: Malia & Rose Tan</span>
+						<span class=""><strong>Produced By</strong>: Tay Jasper & Evan Matthews</span>
 					</p>
 					<div class="column-section clearfix">
 						<div class="column one-half">

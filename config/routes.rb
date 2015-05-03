@@ -1,15 +1,9 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-
-  get 'pages/lyrics'
-
-  get 'pages/music'
-
-  get 'pages/photos'
-
-  get 'pages/videos'
-
-  root 'pages#home'
+  get "home" => "pages#home", :as => :home
+  get "lyrics" => "pages#lyrics", :as => :lyrics
+  get "music" => "pages#music", :as => :music
+  get "photos" => "pages#photos", :as => :photos
+  get "videos" => "pages#videos", :as => :videos
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
