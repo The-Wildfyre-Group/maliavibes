@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get "photos" => "pages#photos", :as => :photos
   get "videos" => "pages#videos", :as => :videos
 
+  root 'pages#home'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

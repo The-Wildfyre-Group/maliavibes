@@ -1,26 +1,44 @@
 <style>
 
+.tp-caption a {
+  color: #fff;
+  text-shadow: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+}
+
 .imgoverlay:after,
-.imgoverlay:hover:after {
+.imgoverlay:after:hover {
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #000000;
+	background: #333 !important;
+
 	z-index: 1;
 	-webkit-transition: 0.4s ease;
 	-moz-transition: 0.4s ease;
 	-ms-transition: 0.4s ease;
 	-o-transition: 0.4s ease;
 	transition: 0.4s ease;
-	opacity: .35;
+	opacity: .15;
 	filter: alpha(opacity=0);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	}
-</style>
+}
 
+.separator-small span {
+  width: 100%;
+  height: 1px;
+  line-height: 1px;
+  background: #0d0d0d;
+  display: block;
+}
+
+</style>
 <!-- PAGE CONTENT -->
 <div id="page-content">
 
@@ -28,65 +46,69 @@
 	<%= render "shared/header" %>
 	<!-- HEADER -->  
 	
+	<!-- PAGE TITLE -->
+		
+	
+
+	<!-- HOME (SLIDER) -->
+	<section id="home" class="notoppadding text-light">
+		<div class="section-inner">
+	
+
+		<!-- REVOLUTION SLIDER -->
+		<div class="rev-slider-container ">
+			<div class="rev-slider" >
+				<ul>
+					<!-- THE FIRST SLIDE -->
+					<li data-transition="slidedown" data-slotamount="5" data-masterspeed="1200" class="imgoverlay">
+						<!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+						<img src="<%= image_path("uploads/roof.jpg")%>"   alt="slidebg4"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+
+						<!-- LAYER NR. 1 -->    
+						<div class="tp-caption srcaption-smallwhite title-minimal align-center lft ltb"
+						data-x="center" data-hoffset="0"
+						data-y="center" data-voffset="0"
+						data-speed="800"
+						data-start="400"
+						data-easing="easeInOutQuad"
+						data-endspeed="800"
+						data-endeasing="easeInOutQuad"
+						style="z-index: 2">
+							<div class="separator-small">
+								<span></span>
+							</div>
+							<strong>
+								<a href="/music">music</a> 
+								/
+								<a href="/photos">photos</a>
+								 / 
+								<a href="/videos">videos</a> 
+								/ 
+								<a href="/lyrics">lyrics</a> 
+							</strong>
+							<div class="separator-small">
+								<span></span>
+							</div>
+						</div>
+					</li> <!-- end first slide -->
+					
+				</ul>
+
+			</div>
+		</div> <!-- END .rev-slider-container -->        
+		<!-- REVOLUTION SLIDER -->
+	
+		</div>
+	</section>
+	<!-- HOME (SLIDER) -->
+	
 	
 	<!-- PAGEBODY -->
 	<div class="page-body">
-        
-		<div class="owlcarousel portfolio-carousel" data-pagination="false" data-navigation="true">
-			<div class="portfolio-carousel-item" style="background-image:url(<%= image_path("uploads/sidewalk.jpg")%>);">
-				<div class="imgoverlay overlay-dark overlay-transparent name-hidden">
-					<div class="overlaycaption">
-						<h5 class="overlay-name title-minimal"><strong>Photos</strong></h5>
-						<div class="separator-small"><span></span></div>
-						<h2 class="alttitle">
-							<span class="fa fa-instagram" style="color: #fff;"></span>
-						</h2>
-						
-					</div>
-					<a href="/photos" class="transition"></a>
-				</div>
-			</div>
-			<div class="portfolio-carousel-item" style="background-image:url(<%= image_path("uploads/skateboard.jpg")%>); background-position: -250px center;">
-				<div class="imgoverlay overlay-dark overlay-transparent name-hidden">
-					<div class="overlaycaption">
-						<h5 class="overlay-name title-minimal"><strong>Lyrics</strong></h5>
-						<div class="separator-small"><span></span></div>
-						<h2 class="alttitle">
-							<span class="fa fa-heart" style="color: #fff;"></span>
-						</h2>
-					</div>
-					<a href="/lyrics" class="transition"></a>
-				</div>
-			</div>
-			<div class="portfolio-carousel-item" style="background-image:url(<%= image_path("gallery/7.jpg")%>); background-position: -200px center;">
-				<div class="imgoverlay overlay-dark overlay-transparent name-hidden">
-					<div class="overlaycaption">
-						<h5 class="overlay-name title-minimal"><strong>Music</strong></h5>
-						<div class="separator-small"><span></span></div>
-						<h2 class="alttitle">
-							<span class="fa fa-soundcloud" style="color: #fff;"></span></h2>
-					</div>
-					<a href="/music" class="transition"></a>
-				</div>
-			</div>
-			<div class="portfolio-carousel-item" style="background-image:url(<%= image_path("uploads/roof.jpg")%>);  background-position: -720px 0;">
-				<div class="imgoverlay overlay-dark overlay-transparent name-hidden">
-					<div class="overlaycaption">
-						<h5 class="overlay-name title-minimal"><strong>Videos</strong></h5>
-						<div class="separator-small"><span></span></div>
-						<h2 class="alttitle"><span class="fa fa-youtube" style="color: #fff;"></span></h2>
-					</div>
-					<a href="/videos" class="transition"></a>
-				</div>
-			</div>
-			
-		</div>
-
-		<!-- FOOTER -->
-		<%= render "shared/footer" %>
-		<!-- FOOTER -->  
-		
       	
+      	<!-- FOOTER -->
+		<%= render "shared/footer" %>
+		<!-- FOOTER -->         
         
  	</div> <!-- END .page-body -->
 	<!-- PAGEBODY -->
